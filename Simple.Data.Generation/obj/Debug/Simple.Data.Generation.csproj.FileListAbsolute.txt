@@ -1,0 +1,10 @@
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation\bin\Debug\Simple.Data.Auto.dll
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation\bin\Debug\Simple.Data.Auto.pdb
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation\bin\Debug\Simple.Data.dll
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation\bin\Debug\System.CoreEx.dll
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation\bin\Debug\System.Reactive.dll
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation\bin\Debug\System.CoreEx.xml
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation\bin\Debug\System.Reactive.xml
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation\obj\Debug\ResolveAssemblyReference.cache
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation\obj\Debug\Simple.Data.Auto.dll
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation\obj\Debug\Simple.Data.Auto.pdb

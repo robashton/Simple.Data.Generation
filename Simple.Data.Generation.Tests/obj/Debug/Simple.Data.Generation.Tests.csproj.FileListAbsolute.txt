@@ -1,0 +1,15 @@
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\Simple.Data.Generation.Tests.dll
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\Simple.Data.Generation.Tests.pdb
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\nunit.framework.dll
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\nunit.mocks.dll
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\pnunit.framework.dll
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\Simple.Data.dll
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\System.CoreEx.dll
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\System.Reactive.dll
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\nunit.framework.xml
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\System.CoreEx.xml
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\System.Reactive.xml
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\obj\Debug\Simple.Data.Generation.Tests.dll
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\obj\Debug\Simple.Data.Generation.Tests.pdb
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\Mono.Cecil.dll

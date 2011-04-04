@@ -11,8 +11,8 @@ namespace Simple.Data.Generation.Tests
         {
             var scanner = new ModelScanner();
             var model = scanner.CreateModelFromAssembly<Users>();
-            var table = model.GetTable("Users");
-            var property = table.GetColumn("Username");
+            var table = model.Table("Users");
+            var property = table.Column("Username");
             Assert.That(property.Type, Is.EqualTo(typeof(string)));
         }
     }

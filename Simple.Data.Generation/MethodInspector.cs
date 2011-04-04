@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 
@@ -26,10 +27,23 @@ namespace Simple.Data.Generation
                 .Reverse<string>()
                 .ToList<string>();
 
+            if (references.Count != 2) { return; }
+
             string tableName = references[0];
-            string columnName = references[1];
+            string columnName = references[1].Replace("FindBy", "");
+            Type columnType = null;
 
+            var actualCall = dynamicMethodCalls.Last();
 
+            var current = actualCall.Previous;
+            if(current.OpCode.Code == Code.Ldstr)
+            {
+                columnType = typeof (string);
+            }
+
+            model.Table(tableName)
+                .Column(columnName)
+                .SetType(columnType);
         }
 
         public Instruction[] ExtractInitialReflectedCachedFieldReferenceInstructions()

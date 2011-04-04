@@ -39,6 +39,10 @@ namespace Simple.Data.Generation
             if(current.OpCode.Code == Code.Ldstr)
             {
                 columnType = typeof (string);
+            } 
+            else if (current.OpCode.Code == Code.Ldc_I4_4) // etc
+            {
+                columnType = typeof(int);
             }
 
             model.Table(tableName)

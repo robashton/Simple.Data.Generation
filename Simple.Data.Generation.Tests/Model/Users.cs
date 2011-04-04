@@ -14,5 +14,10 @@ namespace Simple.Data.Generation.Tests.Model
         {
             return db.Users.FindByUsername("bob");
         }
+
+        public dynamic CreateAnotherViewModel()
+        {
+            return db.Users.FindBySomeId(4);
+        }
     }
 }

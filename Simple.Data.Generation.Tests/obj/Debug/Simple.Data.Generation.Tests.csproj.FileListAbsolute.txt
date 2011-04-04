@@ -13,3 +13,5 @@ C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\
 C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\obj\Debug\Simple.Data.Generation.Tests.dll
 C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\obj\Debug\Simple.Data.Generation.Tests.pdb
 C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\Mono.Cecil.dll
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\Simple.Data.Generation.dll
+C:\Stuff\Research\Simple.Data.Generation\Simple.Data.Generation.Tests\bin\Debug\Simple.Data.Generation.pdb

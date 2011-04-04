@@ -8,8 +8,8 @@
     <ProjectGuid>{80C5D65E-25BF-4ED3-A049-9AFC63E05778}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Simple.Data.Auto</RootNamespace>
-    <AssemblyName>Simple.Data.Auto</AssemblyName>
+    <RootNamespace>Simple.Data.Generation</RootNamespace>
+    <AssemblyName>Simple.Data.Generation</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\packages\Mono.Cecil.0.9.4.0\lib\20\Mono.Cecil.dll</HintPath>
+    </Reference>
     <Reference Include="Simple.Data">
       <HintPath>..\packages\Simple.Data.Core.0.5.6.0\lib\net40\Simple.Data.dll</HintPath>
     </Reference>
@@ -49,7 +52,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataModel.cs" />
+    <Compile Include="DataModelTable.cs" />
+    <Compile Include="DataModelTableColumn.cs" />
+    <Compile Include="MethodInspector.cs" />
+    <Compile Include="ModelScanner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReflectionExtensions.cs" />
+    <Compile Include="TypeInspector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

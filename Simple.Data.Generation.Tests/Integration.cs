@@ -41,9 +41,15 @@ namespace Simple.Data.Generation.Tests
         }
 
         [Test]
-        public void Can_Extract_Dynamic_Cached_Fields_From_A_Type()
+        public void Can_Extract_Dynamic_Cached_Fields_From_A_Method()
         {
-            
+            var inspector = new MethodInspectorBuilder()
+                .ForClass<ClassWithSomeDynamicUsages>()
+                .WithMethod("MethodWithSingleDynamicCall")
+                .Get();
+
+            var cachedFields = inspector.ExtractReflectedCachedFields();
+            Assert.That(cachedFields, Has.Length.EqualTo(1));
         }
     }
 
@@ -129,7 +135,13 @@ namespace Simple.Data.Generation.Tests
 
         public FieldDefinition[] ExtractReflectedCachedFields()
         {
-            throw new NotImplementedException();
+           return method.Body.Instructions
+                .Where(x => x.OpCode.Code == Code.Ldsfld)
+                .Select(x=> (FieldReference)x.Operand)
+                .Distinct()
+                .Where(x=> x.IsCachedReflectionField())
+                .Select(x=>x.Resolve())
+                .ToArray();
         }
 
         public Instruction[] ExtractDynamicMethodCallInstructions()
@@ -138,6 +150,16 @@ namespace Simple.Data.Generation.Tests
                 .Where(x => x.OpCode.Code == Mono.Cecil.Cil.Code.Callvirt)
                 .Where(x => x.Operand is MemberReference && ((MemberReference)(x.Operand)).Name == "Invoke")
                 .ToArray();
+        }
+    }
+
+    public static class ReflectionExtensions
+    {
+        public static bool IsCachedReflectionField(this FieldReference definition)
+        {
+            var baseType = definition.FieldType.Resolve().BaseType;
+            return baseType.FullName == typeof (System.Runtime.CompilerServices.CallSite).FullName;
+            return false;
         }
     }
 

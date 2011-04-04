@@ -1,3 +1,4 @@
 <Modules>
   <Module PersistentId="4B67DD89-706E-4A92-9571-4D23617D9E79" ModuleId="Simple.Data.Generation.Tests" />
+  <Module PersistentId="Mono.Cecil, Version=0.9.4.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" ModuleId="Mono.Cecil" />
 </Modules>

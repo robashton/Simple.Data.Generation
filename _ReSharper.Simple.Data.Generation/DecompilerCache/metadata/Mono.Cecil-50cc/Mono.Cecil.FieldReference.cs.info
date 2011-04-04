@@ -1,0 +1,5 @@
+R# version: 5.1.1753.4
+assembly Mono.Cecil, Version=0.9.4.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756
+  file C:\Stuff\Research\Simple.Data.Generation\packages\Mono.Cecil.0.9.4.0\lib\20\Mono.Cecil.dll mtime 04/04/2011 14:00:52
+referenced assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll mtime 18/03/2010 12:16:28
